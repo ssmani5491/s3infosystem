@@ -21,7 +21,7 @@ pipeline {
         stage('Push to GitHub Registry') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'github_token', variable: 'GHCR_TOKEN')]) {
+                    withCredentials([string(credentialsId: 'Github_token', variable: 'GHCR_TOKEN')]) {
                         sh """
                         echo "${GHCR_TOKEN}" | docker login ${GHCR_REGISTRY} -u ${GHCR_USER} --password-stdin
                         docker tag ${IMAGE_NAME} ${GHCR_REGISTRY}/${GHCR_USER}/${IMAGE_NAME}:latest
