@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 Info System - Technology Services Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="nav-brand" aria-label="S3 Info System Home">
+                    <img src="images/s3 logo.png" alt="S3 Info System logo">
+                    <span>S3 Info System</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <span class="magic-indicator" id="magic-indicator"></span>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Business with <span class="highlight">Cutting-Edge Technology</span></h1>
+                <p class="hero-subtitle">We provide comprehensive technology solutions including API integrations, custom software development, digital marketing, and cybersecurity services to help your business thrive in the digital age.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-animation">
+                    <i class="fas fa-code"></i>
+                    <i class="fas fa-shield-alt"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive technology solutions tailored to your business needs</p>
+            </div>
+            
+            <!-- Service Tabs -->
+            <div class="service-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="api">API Integrations</button>
+                    <button class="tab-btn" data-tab="development">Development</button>
+                    <button class="tab-btn" data-tab="marketing">Digital Marketing</button>
+                    <button class="tab-btn" data-tab="cybersecurity">Cybersecurity</button>
+                    <button class="tab-btn" data-tab="network">Network Security</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-panel active" id="api">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/API image.webp" alt="API integrations concept with connected systems" />
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-plug"></i>
+                                </div>
+                                <h3>API Integrations</h3>
+                                <p>Seamlessly connect your systems with third-party services through robust API integrations. We specialize in RESTful APIs, webhooks, and real-time data synchronization to enhance your business operations and streamline workflows.</p>
+                                <div class="service-details">
+                                    <div class="detail-item">
+                                        <h4>Custom API Development</h4>
+                                        <p>Build tailored APIs that perfectly match your business requirements with scalable architecture and comprehensive documentation.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Third-party Integrations</h4>
+                                        <p>Connect with popular platforms like Salesforce, Shopify, Stripe, and more to expand your business capabilities.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Real-time Data Sync</h4>
+                                        <p>Implement webhooks and real-time data synchronization to keep your systems updated instantly across all platforms.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>API Documentation & Testing</h4>
+                                        <p>Comprehensive API documentation and thorough testing to ensure reliability and ease of integration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="development">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/web_development.jpg" alt="Software development code on screen" />
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>Software & Website Development</h3>
+                                <p>Build powerful, scalable applications and stunning websites that drive results. From custom web applications to mobile apps, we deliver solutions that exceed expectations and provide exceptional user experiences.</p>
+                                <div class="service-details">
+                                    <div class="detail-item">
+                                        <h4>Custom Web Applications</h4>
+                                        <p>Full-stack web development using modern technologies like React, Node.js, Python, and cloud platforms for scalable solutions.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Mobile App Development</h4>
+                                        <p>Native iOS and Android apps, as well as cross-platform solutions using React Native and Flutter for maximum reach.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>E-commerce Solutions</h4>
+                                        <p>Complete online stores with payment integration, inventory management, and customer relationship tools.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>UI/UX Design</h4>
+                                        <p>User-centered design approach with wireframing, prototyping, and responsive design for optimal user experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="marketing">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" alt="Digital marketing analytics dashboard" />
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <h3>Digital Marketing</h3>
+                                <p>Boost your online presence with data-driven digital marketing strategies. We help you reach your target audience and achieve measurable growth through comprehensive SEO, social media, and content marketing campaigns.</p>
+                                <div class="service-details">
+                                    <div class="detail-item">
+                                        <h4>SEO Optimization</h4>
+                                        <p>Technical SEO audits, keyword research, on-page optimization, and link building to improve your search engine rankings.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Social Media Marketing</h4>
+                                        <p>Strategic social media campaigns across Facebook, Instagram, LinkedIn, and Twitter to engage your audience and build brand awareness.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Content Strategy</h4>
+                                        <p>Content creation, blog management, and content marketing strategies to establish thought leadership and drive conversions.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Analytics & Reporting</h4>
+                                        <p>Comprehensive tracking and reporting with Google Analytics, social media insights, and custom dashboards for data-driven decisions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="cybersecurity">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/Cybersecurity.png" alt="Cybersecurity lock and data protection" />
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>Cybersecurity</h3>
+                                <p>Protect your business from cyber threats with comprehensive security solutions. Our experts implement robust security measures to safeguard your data and maintain business continuity in today's digital landscape.</p>
+                                <div class="service-details">
+                                    <div class="detail-item">
+                                        <h4>Security Audits</h4>
+                                        <p>Comprehensive vulnerability assessments and penetration testing to identify and address security weaknesses in your systems.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Threat Monitoring</h4>
+                                        <p>24/7 security monitoring with SIEM solutions and incident response to detect and mitigate threats in real-time.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Data Protection</h4>
+                                        <p>Encryption, backup solutions, and data loss prevention strategies to protect sensitive business information.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Compliance Consulting</h4>
+                                        <p>GDPR, HIPAA, SOX compliance guidance and implementation to meet regulatory requirements and industry standards.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="network">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop" alt="Network security infrastructure and cabling" />
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <h3>Network Security</h3>
+                                <p>Secure and optimize your network infrastructure with enterprise-grade solutions. We provide comprehensive network security services including firewalls, structured networking, and advanced switching solutions for maximum protection and performance.</p>
+                                <div class="service-details">
+                                    <div class="detail-item">
+                                        <h4>Firewall Implementation & Management</h4>
+                                        <p>Next-generation firewalls with advanced threat protection, intrusion detection, and policy management for comprehensive network security.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Structured Networking Solutions</h4>
+                                        <p>Complete network infrastructure design and implementation with proper cabling, routing, and network architecture planning.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>CCTV Surveillance Systems</h4>
+                                        <p>IP-based surveillance systems with remote monitoring, motion detection, and cloud storage for comprehensive security coverage.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>L2 & L3 Switch Configuration</h4>
+                                        <p>Advanced switch configuration for VLAN management, traffic optimization, and network segmentation for enhanced security and performance.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Network Monitoring & Maintenance</h4>
+                                        <p>24/7 network monitoring with proactive maintenance, performance optimization, and rapid incident response.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>VLAN & Network Segmentation</h4>
+                                        <p>Secure network segmentation strategies to isolate critical systems and prevent lateral movement of threats.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About S3 Info System</h2>
+                    <p>We are a leading technology services company with over a decade of experience in delivering innovative solutions to businesses worldwide. Our team of expert developers, designers, and consultants work together to transform your digital vision into reality.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="team-illustration">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your business? Let's discuss your project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>No 146, Thangam Nagar,Neyveli Arch<br>Neyveli, Cuddalore District, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8122899072</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>admin@s3infosystem.in</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>S3 Info System</h3>
+                    <p>Transforming businesses through innovative technology solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">API Integrations</a></li>
+                        <li><a href="#services">Software Development</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#services">Cybersecurity</a></li>
+                        <li><a href="#services">Network Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@s3infosystem.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 S3 Info System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
