@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         IMAGE_NAME = 's3infosystem'
-        GHCR_USER = 'your-github-username' // Change this!
+        GHCR_USER = 'ssmani5491' // Change this!
         GHCR_REGISTRY = 'ghcr.io'
     }
     stages {
