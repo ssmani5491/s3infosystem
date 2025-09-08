@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    if [ $(docker ps -q -f name=${env.CONTAINER_NAME}) ]; then
+                    if [ \$(docker ps -q -f name=${env.CONTAINER_NAME}) ]; then
                         docker stop ${env.CONTAINER_NAME}
                         docker rm ${env.CONTAINER_NAME}
                     fi
@@ -38,5 +38,3 @@ pipeline {
         }
     }
 }
-
-
