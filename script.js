@@ -378,6 +378,16 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.style.opacity = '1';
     }, 100);
+
+    // Hide preloader after all assets are loaded
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.opacity = '0';
+            preloader.style.transition = 'opacity 400ms ease';
+            setTimeout(() => preloader.remove(), 420);
+        }
+    });
 });
 
 // Magic indicator helpers
