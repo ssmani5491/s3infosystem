@@ -2,7 +2,8 @@ pipeline {
     agent any
     environment {
         IMAGE_NAME = 's3infosystem'
-        CONTAINER_NAME = 's3infosystem-container'
+        GHCR_USER = 'your-github-username' // Change this!
+        GHCR_REGISTRY = 'ghcr.io'
     }
     stages {
         stage('Checkout') {
@@ -17,22 +18,16 @@ pipeline {
                 }
             }
         }
-        stage('Stop Existing Container') {
+        stage('Push to GitHub Registry') {
             steps {
                 script {
-                    sh """
-                    if [ \$(docker ps -q -f name=${env.CONTAINER_NAME}) ]; then
-                        docker stop ${env.CONTAINER_NAME}
-                        docker rm ${env.CONTAINER_NAME}
-                    fi
-                    """
-                }
-            }
-        }
-        stage('Run Docker Container') {
-            steps {
-                script {
-                    sh "docker run -d -p 8080:80 --name ${env.CONTAINER_NAME} ${env.IMAGE_NAME}"
+                    withCredentials([string(credentialsId: 'github-pat', variable: 'GHCR_TOKEN')]) {
+                        sh """
+                        echo "${GHCR_TOKEN}" | docker login ${GHCR_REGISTRY} -u ${GHCR_USER} --password-stdin
+                        docker tag ${IMAGE_NAME} ${GHCR_REGISTRY}/${GHCR_USER}/${IMAGE_NAME}:latest
+                        docker push ${GHCR_REGISTRY}/${GHCR_USER}/${IMAGE_NAME}:latest
+                        """
+                    }
                 }
             }
         }
